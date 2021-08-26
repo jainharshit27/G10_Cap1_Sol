@@ -27,8 +27,6 @@ hurdle_img = pygame.image.load("hurdle.png")
 hurdle_img = pygame.transform.scale(hurdle_img, (200,25))
 
 thief = Thief(10, 380, 15, 15)
-#thief_x_change = 0
-#thief_y_change = 0
 
 jewel = pygame.Rect(350, 10, 40, 40)
 jewel_image = pygame.image.load("jewel.png")
@@ -40,23 +38,7 @@ while True:
         if event.type == pygame.QUIT:
             pygame.quit()
             sys.exit()
-        '''
-        if event.type == pygame.KEYDOWN:
-            if event.key == pygame.K_LEFT:
-                thief_x_change = -1
-            if event.key == pygame.K_RIGHT:
-                thief_x_change = 1
-            if event.key == pygame.K_DOWN:
-                thief_y_change = 1
-            if event.key == pygame.K_UP:
-                thief_y_change = -1
-        if event.type == pygame.KEYUP:
-            thief_x_change = 0
-            thief_y_change = 0
-                    
-    thief.rect.x += thief_x_change
-    thief.rect.y += thief_y_change
-    '''        
+               
     hurdle_1.paste_image(hurdle_img)
     hurdle_2.paste_image(hurdle_img)
     
